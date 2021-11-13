@@ -10,8 +10,10 @@ import TollIcon from '@mui/icons-material/Toll';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ContactlessIcon from '@mui/icons-material/Contactless';
 import { NavHashLink } from 'react-router-hash-link';
+import useAuth from '../../../hooks/useAuth';
 
 const Footer = () => {
+    const { user } = useAuth();
     return (
         <Box sx={{backgroundColor:'rgba(0,100,240,1)',paddingTop:'50px',paddingBottom:'50px'}}>
             <Container sx={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
@@ -24,7 +26,7 @@ const Footer = () => {
                     <Typography variant="h5">Quick Links</Typography>
                     <NavHashLink style={{textDecoration:'none', color:'#ffffff'}} to="/home#home-top">Home</NavHashLink>
                     <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/products#products-top">Products</NavHashLink>
-                    <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/dashboard#dashboard-top">Dashboard</NavHashLink>
+                    {user.email && <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/dashboard#dashboard-top">Dashboard</NavHashLink>}
                     <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/login#login-top">Login</NavHashLink>
                 </Box>
                 <Box sx={{m:1,p:1,width:'260px'}}>

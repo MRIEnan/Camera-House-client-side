@@ -6,7 +6,6 @@ import HomeTopBanner from '../HomeTopBanner/HomeTopBanner';
 import HomeAllProducts from '../HomeAllProducts/HomeAllProducts';
 import HomeReviews from '../HomeReviews/HomeReviews';
 import HomeCameraFeatures from '../HomeCameraFeatures/HomeCameraFeatures';
-import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     
@@ -16,7 +15,6 @@ const Home = () => {
             <HomeAllProducts></HomeAllProducts>
             <HomeReviews></HomeReviews>
             <HomeCameraFeatures></HomeCameraFeatures>
-            <Footer></Footer>
         </Box>
     );
 };

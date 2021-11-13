@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/Shared/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import ProductBooking from './Pages/Shared/ProductBooking/ProductBooking';
 import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );
