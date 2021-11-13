@@ -17,7 +17,7 @@ const MyOrders = () => {
     const [shipment,setShipment] = useState(false);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://afternoon-mountain-78508.herokuapp.com/orders?email=${user.email}`)
         .then(res => res.json())
         .then(data => setMyOrders(data));
     },[shipment]);
@@ -27,7 +27,7 @@ const MyOrders = () => {
       if(!proceed){
           return
       }
-      fetch('http://localhost:5000/orders',{
+      fetch('https://afternoon-mountain-78508.herokuapp.com/orders',{
         method:'DELETE',
         headers:{
             'content-type':'application/json'

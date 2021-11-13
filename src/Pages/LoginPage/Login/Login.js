@@ -17,7 +17,7 @@ const Login = () => {
 
     // set admin from backend
     useEffect(()=>{
-        fetch(`http://localhost:5000/users/${mail}`)
+        fetch(`https://afternoon-mountain-78508.herokuapp.com/users/${mail}`)
         .then(res => res.json())
         .then(data => {
             setAdmin(data.admin)

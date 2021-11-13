@@ -19,7 +19,7 @@ const AddAProduct = () => {
 
     const handleReviewSubmit = e =>{
 
-        fetch('http://localhost:5000/products',{
+        fetch('https://afternoon-mountain-78508.herokuapp.com/products',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

@@ -15,7 +15,7 @@ const ProductBooking = () => {
     
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/products?id=${Pid}`)
+        fetch(`https://afternoon-mountain-78508.herokuapp.com/products?id=${Pid}`)
         .then(res => res.json())
         .then(data => {
             setProduct(data)
@@ -40,7 +40,7 @@ const ProductBooking = () => {
         const date = (new Date()).toLocaleDateString();
         ordererDetails.ordererDate=date;
 
-        fetch('http://localhost:5000/orders',{
+        fetch('https://afternoon-mountain-78508.herokuapp.com/orders',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

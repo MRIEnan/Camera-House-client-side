@@ -11,7 +11,7 @@ const MakeAdmin = (props) => {
     
     const handleAdminSubmit = e =>{
         const user = {email};
-        fetch('http://localhost:5000/users/admin',{
+        fetch('https://afternoon-mountain-78508.herokuapp.com/users/admin',{
             method:'PUT',
             headers:{
                 'authorization':`Bearer ${token}`,

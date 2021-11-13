@@ -6,7 +6,7 @@ import { NavHashLink } from 'react-router-hash-link';
 const ItemCard = (props) => {
     const { _id,cameraImage, cameraName, description, price } = props.product;
 return (
-  <Card sx={{ maxWidth: {xs:'240px',sm:'300px'},m:1 }}>
+  <Card sx={{ width: {xs:'240px',sm:'300px'},m:1 }}>
     <CardActionArea>
       <CardMedia
         component="img"

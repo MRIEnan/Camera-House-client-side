@@ -15,7 +15,7 @@ const ManageProducts = () => {
     const { token } = useAuth();
 
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://afternoon-mountain-78508.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setAllProducts(data));
     },[managed]);
@@ -31,7 +31,7 @@ const ManageProducts = () => {
                 return
             }
         }
-        fetch('http://localhost:5000/products',{
+        fetch('https://afternoon-mountain-78508.herokuapp.com/products',{
             method:method,
             headers:{
               'authorization':`Bearer ${token}`,

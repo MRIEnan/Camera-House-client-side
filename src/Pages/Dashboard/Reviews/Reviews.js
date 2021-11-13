@@ -21,7 +21,7 @@ const Reviews = () => {
     const handleReviewSubmit = e =>{
         console.log(reviewDetail);
 
-        fetch('http://localhost:5000/reviews',{
+        fetch('https://afternoon-mountain-78508.herokuapp.com/reviews',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
