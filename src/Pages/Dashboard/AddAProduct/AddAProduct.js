@@ -43,7 +43,7 @@ const AddAProduct = () => {
                 <TextField onBlur={handleOnBlur} id="standard-basic" label="Camera Name" name="cameraName" variant="standard" required/>
                 <TextField onBlur={handleOnBlur} id="standard-basic" label="price" name="price" type="number" variant="standard" required/>
                 <TextField onBlur={handleOnBlur} id="standard-basic" label="Camera Image Url" name="cameraImage" variant="standard" required/>
-                <textarea style={{marginTop:'5px',fontSize:'14px',height:'70px'}} onBlur={handleOnBlur} placeholder="please describe your product" id="standard-basic" label="give your review" name="review" variant="standard" required/>
+                <textarea style={{marginTop:'5px',fontSize:'14px',height:'70px'}} onBlur={handleOnBlur} placeholder="please describe your product" id="standard-basic" label="give your review" name="description" variant="standard" required/>
                 <Button sx={{marginTop:'10px'}} variant="contained" type="submit">Add</Button>
             </Box>
         </Container>
