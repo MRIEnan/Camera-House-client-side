@@ -12,7 +12,7 @@ const Home = () => {
     
     return (
         <Box >
-            <HomeTopBanner></HomeTopBanner>
+            <HomeTopBanner className="home-top"></HomeTopBanner>
             <HomeAllProducts></HomeAllProducts>
             <HomeReviews></HomeReviews>
             <HomeCameraFeatures></HomeCameraFeatures>

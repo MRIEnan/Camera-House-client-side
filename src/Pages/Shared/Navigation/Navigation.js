@@ -90,17 +90,17 @@ const Navigation = (props) => {
               m: 1,
               visibility: { sx: "hidden" },
             }}>
-              <NavHashLink style={{ textDecoration: "none" }} to="/">
+              <NavHashLink style={{ textDecoration: "none" }} to="/home#home-top">
                 <Item>Home</Item>
               </NavHashLink>
-              <NavHashLink style={{ textDecoration: "none" }} to="/products">
+              <NavHashLink style={{ textDecoration: "none" }} to="/products#products-top">
                 <Item>Products</Item>
               </NavHashLink>
-              {user.email && <NavHashLink style={{ textDecoration: "none" }} to="/dashboard">
+              {user.email && <NavHashLink style={{ textDecoration: "none" }} to="/dashboard#dashboard-top">
                 <Item>Dashboard</Item>
               </NavHashLink>}
               {!user.email ?
-              <NavHashLink style={{ textDecoration: "none" }} to="/login">
+              <NavHashLink style={{ textDecoration: "none" }} to="/login#login-top">
                 <Item>Login</Item>
               </NavHashLink>:
               <Button sx={{color:'#ffffff',fontWeight:'700'}} onClick={logOut}>Log out</Button>}
@@ -134,20 +134,20 @@ const Navigation = (props) => {
                 onClose={handleClose}
               >
                 <MenuItem onClick={handleClose}>
-                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/">Home
+                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/home#home-top">Home
                     </NavHashLink>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/products">Products
+                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/products#products-top">Products
                     </NavHashLink>
                 </MenuItem>
                 {user.email && <MenuItem onClick={handleClose}>
-                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/dashboard">Dashboard
+                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/dashboard#dashboard-top">Dashboard
                     </NavHashLink>
                 </MenuItem>}
                 {!user.email? 
                 <MenuItem onClick={handleClose}>
-                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/login">Login
+                    <NavHashLink style={{ textDecoration: "none",color:'#01579b' }} to="/login#login-top">Login
                     </NavHashLink>
                 </MenuItem> :
                 <MenuItem onClick={logOut}>

@@ -7,7 +7,7 @@ Live site link of this [https://camera-house-e359b.web.app](https://camera-house
 - There has  secured profile system.
 - You can know information about the various camera.
 - You can know information about the various photography courses.
-- You can get buy camera.
-- You can get sell camera.
-- you can also mainain your account.
-- you can also have history of your travel.
+- You can buy camera.
+- You can sell camera.
+- You can manage products/orders.
+- You can also maintain your account.

@@ -20,7 +20,7 @@ const Dashboard = () => {
 
     
     return (
-        <Box sx={{paddingTop: '10px' ,marginBottom:'10px',display:'grid',gridTemplateColumns:{xs:'100%',sm:'30% 65%'}}}>
+        <Box className="dashboard-top" sx={{paddingTop: '10px' ,marginBottom:'10px',display:'grid',gridTemplateColumns:{xs:'100%',sm:'30% 65%'}}}>
             <Box sx={{width: {xs:'100%',sm:'160px'}, display:'flex',paddingTop:'5px', flexWrap:'wrap',flexDirection:{xs:'row',sm:'column'}, textAlign:'center',
             marginRight:'5px'}}>
                 {/* add a product */}

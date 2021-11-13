@@ -26,7 +26,7 @@ const Products = () => {
 
     return (
         <Box sx={{py:4}}>
-            <Typography sx={{textAlign:'center', fontWeight:'700',color:'rgba(0,100,240,1)',mb:2}} variant="h4">Our Products</Typography>
+            <Typography className="products-top" sx={{textAlign:'center', fontWeight:'700',color:'rgba(0,100,240,1)',mb:2}} variant="h4">Our Products</Typography>
             <Container sx={{display:'flex',flexWrap:'wrap', justifyContent:'center'}}>
             {
                 allProducts.map(product => <ItemCard key={product._id} product={product}></ItemCard>)
