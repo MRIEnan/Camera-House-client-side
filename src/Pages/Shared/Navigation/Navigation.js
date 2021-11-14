@@ -107,8 +107,8 @@ const Navigation = (props) => {
               </Box>
             </Box>
             <Box sx={{display:{xs:'flex',sm:'none',justifyContent:'space-between',alignItems:'center'}}}>
-              <Box>
-                <CameraAltIcon sx={{marginLeft:'10px'}}/>
+              <Box sx={{display:'flex',alignItems:'center'}}>
+              <CameraAltIcon sx={{marginLeft:'10px'}}/><Typography variant='p'>{user.displayName}</Typography>
               </Box>
               <IconButton
                 size="large"

@@ -42,8 +42,8 @@ const Login = () => {
         e.preventDefault();
     }
   return (
-    <Container sx={{textAlign:'center'}}>
-        <Typography id="login-top" variant="h3" component="div" sx={{textAlign:'center', marginTop:2}}>Login</Typography>
+    <Container id="login-top" sx={{textAlign:'center',paddingTop:2}}>
+        <Typography variant="h3" component="div" sx={{textAlign:'center'}}>Login</Typography>
         <Box onSubmit={handleLogin} component="form" sx={{p:2,margin:'auto', display:'grid',width:{xs:1,sm:'400px'}}}>
             <TextField sx={{mt:1}} id="standard-basic" onBlur={handleOnChange} label="email" name="email" type="email" variant="standard" />
             <TextField onBlur={handleOnChange} sx={{mt:1}} id="standard-basic" label="password" name="password" type="password" variant="standard" />

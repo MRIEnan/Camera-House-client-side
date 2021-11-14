@@ -21,7 +21,8 @@ const Dashboard = () => {
     
     return (
         <Box id="dashboard-top" sx={{paddingTop: '10px' ,marginBottom:'10px',display:'grid',gridTemplateColumns:{xs:'100%',sm:'30% 65%'}}}>
-            <Box sx={{width: {xs:'100%',sm:'160px'}, display:'flex',paddingTop:'5px', flexWrap:'wrap',flexDirection:{xs:'row',sm:'column'}, textAlign:'center',
+            <Box sx={{width: {xs:'100%',sm:'160px'}, display:{xs:'grid',sm:'flex'},
+            gridTemplateColumns:{xs:'repeat(2,1fr)'},paddingTop:'5px', flexWrap:{sm:'wrap'},flexDirection:{sm:'column'}, textAlign:'center',
             marginRight:'5px'}}>
                 {/* add a product */}
                 {admin && <NavHashLink style={{textDecoration:'none', margin:'5px',padding:'10px',color:'rgba(0,100,240,1)',boxShadow:'0 0 10px rgba(0,0,0,.33)',marginBottom:'5px'}} to={`${url}/addAProduct`}>Add A Product</NavHashLink>}

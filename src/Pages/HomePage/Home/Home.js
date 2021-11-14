@@ -11,7 +11,7 @@ const Home = () => {
     
     return (
         <Box >
-            <HomeTopBanner className="home-top"></HomeTopBanner>
+            <HomeTopBanner></HomeTopBanner>
             <HomeAllProducts></HomeAllProducts>
             <HomeReviews></HomeReviews>
             <HomeCameraFeatures></HomeCameraFeatures>

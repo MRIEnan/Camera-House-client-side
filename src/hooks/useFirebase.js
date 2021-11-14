@@ -69,12 +69,12 @@ const useFirebase = () => {
         .then((userCredential)=>{
             const user = userCredential.user;
             if(admin){
-                const destination = location?.state?.from || '/dashboard';
+                const destination = location?.state?.from || '/dashboard#dashboard-top';
                 history.replace(destination);
                 setAuthError('')
             }
             else{
-                const destination = location?.state?.from || '/';
+                const destination = location?.state?.from || '/home#home-top';
                 history.replace(destination);
                 setAuthError('')
             }

@@ -27,7 +27,7 @@ const Footer = () => {
                     <NavHashLink style={{textDecoration:'none', color:'#ffffff'}} to="/home#home-top">Home</NavHashLink>
                     <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/products#products-top">Products</NavHashLink>
                     {user.email && <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/dashboard#dashboard-top">Dashboard</NavHashLink>}
-                    <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/login#login-top">Login</NavHashLink>
+                    {!user.email && <NavHashLink style={{textDecoration:'none',color:'#ffffff'}} to="/login#login-top">Login</NavHashLink>}
                 </Box>
                 <Box sx={{m:1,p:1,width:'260px'}}>
                     <Typography variant="h5">Contacts</Typography>
